@@ -1,0 +1,334 @@
+/* all devices style
+---------------------------------------*/
+@import "compass";
+
+/* all */
+
+body {
+  font-family:sans-serif;
+  font-size:14px;
+  line-height:1.5;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px !important;
+  background-color: #fff;
+  color:#333;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: none;
+}
+
+a{
+  color: #333;
+  text-decoration:none;
+}
+
+/* Common */
+
+.spr{
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.taC{
+  text-align: center;
+}
+
+.taR{
+  text-align: right;
+}
+
+.title{
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  padding: 12px;
+}
+
+.lead{
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.minor{
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.price{
+  color: #fa505a;
+  font-size: 16px;
+}
+
+/* review */
+.reviewHilight{
+  color: #fab40a;
+}
+
+.reviewNone{
+  color: #ccc;
+}
+
+/* Contr */
+.glContr{
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.contr{
+  margin-top: 54px;
+  min-width: 320px !important;
+}
+
+.contrMap{
+  margin-top: 274px;
+  min-width: 320px !important;
+}
+
+/* map Layout */
+.mapWrap{
+  width: 100%;
+  height: 220px;
+  position: fixed;
+  overflow: hidden;
+  top: 56px;
+  left: 0;
+  background-color: #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+}
+
+.map-embed{
+  max-width: 100% ;
+  height: 0 ;
+  margin: 0 ;
+  padding: 0 0 56.25% ;
+  position: relative ;
+  top: 0 ;
+  left: 0 ;
+}
+
+.map-embed > div{
+  position: absolute ;
+  top: 0 ;
+  left: 0 ;
+  width: 100% ;
+  height: 220px;
+  margin: 0 ;
+  padding: 0 ;
+}
+
+.map-embed img{
+  max-width: none ;
+}
+
+/* navHeader Layout */
+.navHeader{
+  width: 100%;
+  min-width: 320px;
+  background-color: #fff;
+  height:56px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+}
+
+.logo{
+  margin-left: 12px;
+  display: inline-block;
+}
+
+.logoImg{
+  width: 56px;
+  height: 56px;
+  background-image:url("../img/logo@2x.png");
+  @include background-size(54px 24px);
+  background-position: center left;
+  display: block;
+}
+
+.navOption{
+  float: right;
+  width: 56px;
+  height: 56px;
+  display: table;
+}
+
+.navBtnSearch{
+  width: 56px;
+  height: 56px;
+  margin-left: 12px;
+  display: table-cell;
+  background-image:url("../img/nav-btn-search@2x.png");
+  @include background-size(56px auto);
+  background-position: center center;
+}
+
+/* navFooter Layout */
+
+.navFooter{
+  border-top: 1px solid #ccc;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* unit */
+
+.unit{
+  padding-bottom: 20px;
+}
+
+.in{
+  margin-left:12px;
+  margin-right:12px;
+}
+
+.hl{
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+/* list */
+.list{
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.list:last-child{
+  border: none;
+}
+
+.listArea{
+  font-size: 18px;
+  padding-left: 44px;
+  padding-right: 20px;
+  background-image:url("../img/icon-list@2x.png");
+  background-repeat: no-repeat;
+  @include background-size(32px auto);
+  background-position: 6px center;
+}
+
+/* listHotels */
+.listL130{
+  float: left;
+  width: 130px;
+  margin-right: 12px;
+}
+
+.listL80{
+  float: left;
+  width: 80px;
+  margin-right: 12px;
+}
+
+.listInfo{
+  overflow: hidden;
+}
+
+.listNum{
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  text-align: center;
+  background-color: #FA505A;
+  color: #fff;
+  line-height: 20px;
+  border-radius: 10px;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+
+
+/* [index]Layout */
+.featureWrap{
+  width: 100%;
+  height: 420px;
+  padding-top: 40px;
+  text-align: center;
+  background-image:url("../img/index-feature-bg@2x.png");
+  background-repeat: no-repeat;
+  @include background-size(100% auto);
+  background-position: center bottom;
+  box-sizing: border-box;
+}
+
+.featureH2{
+  height: 64px;
+  background-image:url("../img/index-feature-logo@2x.png");
+  @include background-size(150px 64px);
+  background-position: center center;
+}
+
+.featureLead{
+  color: #000;
+  line-height: 1;
+  font-size: 14px;
+  padding: 20px 0;
+  border-bottom: 1px solid #fa505a;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.searchLead{
+  font-size: 22px;
+  color: #000;
+}
+
+.searchBtnWrap{
+  width: 100%;
+  max-width: 360px;
+  display: table;
+  margin: 10px auto;
+}
+
+.searchBtnHere{
+  min-width: 140px;
+  height: 140px;
+  display: table-cell;
+  background-image:url("../img/search-btn-here@2x.png");
+  @include background-size(140px auto);
+  background-position: center center;
+}
+
+.searchBtnArea{
+  min-width: 140px;
+  height: 140px;
+  display: table-cell;
+  background-image:url("../img/search-btn-area@2x.png");
+  @include background-size(140px auto);
+  background-position: center center;
+}
+
+.aboutWrap{
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  background-image:url("../img/index-about-bg@2x.png");
+  background-repeat: no-repeat;
+  @include background-size(100% auto);
+  background-position: center top;
+  box-sizing: border-box;
+}
+
+.aboutH2{
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.aboutLead{
+  color: #fff;
+  font-size: 14px;
+  line-height: 2.8;
+}
+
+
+
+
+
