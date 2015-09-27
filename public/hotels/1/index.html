@@ -29,9 +29,16 @@
       <a href="/" class="logoImg spr">NEAR</a>
     </h1>
     <div class="navOption">
-      <a href="#" class="navBtnSearch spr"></a>
+      <a href="#" class="navBtnSearch spr" id="navBtnSearch">検索</a>
     </div>
   </header>
+
+  <div class="overlay hidden" id="overlay">
+    <div class="searchBtnWrap">
+      <a href="/hotels/1/" class="searchBtnHere spr">近くで探す</a>
+      <a href="/area/prefectures/1/" class="searchBtnArea spr">エリアで探す</a>
+    </div>
+  </div>
 
   <div class="mapWrap">
     <div class="map-embed">
@@ -41,12 +48,15 @@
   </div>
 
   <div class="contrMap">
+
+    <div class="loading"></div>
+    
     <a href="../../hotel/1/" class="list">
       <div class="in">
         <img class="listL130" src="../../img/list-thumb@2x.png">
         <div class="listInfo">
           <h3 class="lead"><span class="listNum">1</span>箱根湯本温泉　吉池旅館</h3>
-          <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+          <span class="review is4"></span>
           <p class="minor">四季折々を映す回遊式庭園と豊富な湯量を持つ掛け流し温泉旅館。旧岩崎家別邸と約一万坪の日本庭園は風情を感じさせます。</p>
           <p class="price taR">10,800円〜</p>
         </div>
@@ -58,7 +68,7 @@
         <img class="listL130" src="../../img/list-thumb@2x.png">
         <div class="listInfo">
           <h3 class="lead"><span class="listNum">2</span>箱根湯本温泉　吉池旅館</h3>
-          <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+          <span class="review is4"></span>
           <p class="minor">四季折々を映す回遊式庭園と豊富な湯量を持つ掛け流し温泉旅館。旧岩崎家別邸と約一万坪の日本庭園は風情を感じさせます。</p>
           <p class="price taR">10,800円〜</p>
         </div>
@@ -70,7 +80,7 @@
         <img class="listL130" src="../../img/list-thumb@2x.png">
         <div class="listInfo">
           <h3 class="lead"><span class="listNum">3</span>箱根湯本温泉　吉池旅館</h3>
-          <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+          <span class="review is4"></span>
           <p class="minor">四季折々を映す回遊式庭園と豊富な湯量を持つ掛け流し温泉旅館。旧岩崎家別邸と約一万坪の日本庭園は風情を感じさせます。</p>
           <p class="price taR">10,800円〜</p>
         </div>
@@ -82,7 +92,7 @@
         <img class="listL130" src="../../img/list-thumb@2x.png">
         <div class="listInfo">
           <h3 class="lead"><span class="listNum">4</span>箱根湯本温泉　吉池旅館</h3>
-          <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+          <span class="review is4"></span>
           <p class="minor">四季折々を映す回遊式庭園と豊富な湯量を持つ掛け流し温泉旅館。旧岩崎家別邸と約一万坪の日本庭園は風情を感じさせます。</p>
           <p class="price taR">10,800円〜</p>
         </div>
@@ -100,6 +110,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="../../js/near.js"></script>
+<script type="text/javascript" src="../../js/map.js"></script>
 
 </body>
 </html>

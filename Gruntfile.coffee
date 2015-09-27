@@ -4,8 +4,10 @@ module.exports = (grunt)->
 
     uglify:
       dist:
-        src: 'src/js/near.js',
-        dest: 'public/js/near.js'
+        files:  {
+          'public/js/near.js': 'src/js/near.js',
+          'public/js/map.js': 'src/js/map.js'
+        }
 
     compass:
       dist:
@@ -29,7 +31,7 @@ module.exports = (grunt)->
         options:
           port: 8000,
           keepalive: true,
-          hostname: '192.168.1.5',
+          hostname: '192.168.1.9',
           base: './public'
 
   })

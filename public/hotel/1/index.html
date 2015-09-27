@@ -29,10 +29,16 @@
       <a href="/" class="logoImg spr">NEAR</a>
     </h1>
     <div class="navOption">
-      <a href="#" class="navBtnSearch spr"></a>
+      <a href="#" class="navBtnSearch spr" id="navBtnSearch">検索</a>
     </div>
   </header>
 
+  <div class="overlay hidden" id="overlay">
+    <div class="searchBtnWrap">
+      <a href="/hotels/1/" class="searchBtnHere spr">近くで探す</a>
+      <a href="/area/prefectures/1/" class="searchBtnArea spr">エリアで探す</a>
+    </div>
+  </div>
   <div class="contr" id="contr">
     <div class="mainPhotoUnit">
     <div class="mainPhotoSlide" id="mainPhotoSlide">
@@ -55,45 +61,45 @@
         <div class="in">
           <div class="listL130">
             <div class="reviewSummary">
-              <div class="reviewPoint">4.2</div>
-              <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+              <div class="reviewPoint">4.23</div>
+              <span class="review is4"></span>
             </div>
           </div>
           <ul class="reviewItemWrap">
             <li class="reviewItem">
               <div class="listL60 taR">サービス</div>
               <div class="taC">
-                <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+                <span class="review is1"></span>
               </div>
             </li>
             <li class="reviewItem">
               <div class="listL60 taR">立地</div>
               <div class="taC">
-                <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+                <span class="review is2"></span>
               </div>
             </li>
             <li class="reviewItem">
               <div class="listL60 taR">部屋</div>
               <div class="taC">
-                <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+                <span class="review is3"></span>
               </div>
             </li>
             <li class="reviewItem">
               <div class="listL60 taR">設備</div>
               <div class="taC">
-                <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+                <span class="review is4"></span>
               </div>
             </li>
             <li class="reviewItem">
               <div class="listL60 taR">風呂</div>
               <div class="taC">
-                <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+                <span class="review is5"></span>
               </div>
             </li>
             <li class="reviewItem">
               <div class="listL60 taR">食事</div>
               <div class="taC">
-                <span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewHilight">★</span><span class="reviewNone">☆</span>
+                <span class="review is5"></span>
               </div>
             </li>
           </ul>
@@ -119,7 +125,7 @@
               <p class="minor10">税込 10,800円〜/人</p>
             </div>
             <div class="taR">
-              <p href="#" class="btn btnC">詳細</p>
+              <p href="#" class="btn btnCir">詳細</p>
             </div>
           </div>
         </div>
@@ -135,7 +141,7 @@
               <p class="minor10">税込 10,800円〜/人</p>
             </div>
             <div class="taR">
-              <p href="#" class="btn btnC">詳細</p>
+              <p href="#" class="btn btnCir">詳細</p>
             </div>
           </div>
         </div>
@@ -151,7 +157,7 @@
               <p class="minor10">税込 10,800円〜/人</p>
             </div>
             <div class="taR">
-              <p href="#" class="btn btnC">詳細</p>
+              <p href="#" class="btn btnCir">詳細</p>
             </div>
           </div>
         </div>
@@ -167,7 +173,7 @@
               <p class="minor10">税込 10,800円〜/人</p>
             </div>
             <div class="taR">
-              <p href="#" class="btn btnC">詳細</p>
+              <p href="#" class="btn btnCir">詳細</p>
             </div>
           </div>
         </div>
@@ -183,7 +189,7 @@
               <p class="minor10">税込 10,800円〜/人</p>
             </div>
             <div class="taR">
-              <p href="#" class="btn btnC">詳細</p>
+              <p href="#" class="btn btnCir">詳細</p>
             </div>
           </div>
         </div>
@@ -210,18 +216,10 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="../../js/near.js"></script>
+<script type="text/javascript" src="../../js/map.js"></script>
 
 </body>
 </html>
