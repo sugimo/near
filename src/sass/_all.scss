@@ -87,13 +87,13 @@ a{
 .loading{
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 200px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-image:url("../img/loading@2x.gif");
-  @include background-size(32px auto);
+  @include background-size(50px auto);
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 10;
