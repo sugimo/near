@@ -27,6 +27,7 @@ a{
 
 .hidden{
   display: none;
+  overflow: hidden;
 }
 
 .spr{
@@ -81,7 +82,7 @@ a{
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.8);
-  z-index:1000;
+  z-index:100;
 }
 
 .loading{
@@ -223,7 +224,6 @@ a{
   left: 0;
   background-color: #ccc;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  z-index:100;
 }
 
 .map-embed{
@@ -267,7 +267,7 @@ a{
   position:fixed;
   top:0;
   left:0;
-  z-index:100;
+  z-index:1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2)
 }
 

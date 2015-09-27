@@ -13,14 +13,22 @@ $(window).resize(function(){
 
 // nav overlay //
 $(function(){
+		var wH = $(window).height();
+		var _glContr = $("#glContr");
 		var _navBtnSearch = $("#navBtnSearch");
 		var _overlay = $("#overlay");
 
 		_navBtnSearch.click(function(){
 			if(_overlay.hasClass("hidden") == true){
 				_overlay.removeClass("hidden");
+				_overlay.height(wH -56);
+				_glContr.height(wH);
+				_glContr.css({"overflow":"hidden"});
 			}else{
 				_overlay.addClass("hidden");
+				_overlay.height("");
+				_glContr.height("");
+				_glContr.css({"overflow":""});
 			};
 
 		});
