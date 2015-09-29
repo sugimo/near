@@ -70,6 +70,7 @@ a{
 .price{
   color: #fa505a;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .overlay{
@@ -298,6 +299,16 @@ a{
   margin-left: 12px;
   display: table-cell;
   background-image:url("../img/nav-btn-search@2x.png");
+  @include background-size(56px auto);
+  background-position: center center;
+}
+
+.navBtnClose{
+  width: 56px;
+  height: 56px;
+  margin-left: 12px;
+  display: table-cell;
+  background-image:url("../img/nav-btn-close@2x.png");
   @include background-size(56px auto);
   background-position: center center;
 }
